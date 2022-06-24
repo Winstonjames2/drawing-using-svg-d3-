@@ -6,15 +6,15 @@ document.addEventListener("DOMContentLoaded",function(){
     let lines=[]
     let draw=false;
     
-    svg.on("mousedown" || "touchstart",function(){
+    svg.on("touchstart",function(){
         draw=true;
         const coord=d3.mouse(this);
         draw_point(coord[0],coord[1],false)
     });
-    svg.on("mouseup" || "touchend",function(){
+    svg.on("touchend",function(){
         draw=false;
     });
-    svg.on("mousemove" || "touchmove",function(){
+    svg.on("touchmove",function(){
         const coord=d3.mouse(this);
         if(draw===false){
             return
