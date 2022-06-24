@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <script src="https://d3js.org/d3.v4.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        
+    </head>
+    <body>
+        <style>
+        .container{
+            text-align: center;
+        }
+        </style>
+        <div class="container">
+            <h1>DRAWING USING SVG(D3 Edition)</h1>
+            <div id="options">
+                <select id="color-picker">
+                    <option value="black" selected>Black</option>
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                </select>
+                <select id="thickness-picker">
+                    <option value="1">1</option>
+                    <option value="2" selected>2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <button id="erase">ERASE</button>
+            </div>
+        </div><br><br><hr>
+        <svg id="draw"></svg>
+
+        <script src="draw.js"></script>
+    </body>
+</html>
